@@ -1,0 +1,17 @@
+package com.example.pro01.ex08
+//object를 사용한 생성
+
+//추상 클래스의 선언
+abstract class Printer {
+    abstract fun print() //추상메서드
+}
+
+var myPrinter = object: Printer() { //객체 인스턴스
+    override fun print() {  //추상 메서드의 구현
+        println("출력합니다.")
+    }
+}
+
+fun main() {
+    myPrinter.print()
+}
